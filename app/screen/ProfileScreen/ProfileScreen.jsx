@@ -16,12 +16,6 @@ export default function ProfileScreen() {
   const { signOut } = useAuth();
   const navigation = useNavigation();
 
-  const onMessage = () => {
-    Linking.openURL(
-      `mailto:${user.primaryEmailAddress.emailAddress}?subject=Contacto&body=`
-    );
-  };
-
   const onSignOut = () => {
     signOut();
   };
@@ -29,14 +23,14 @@ export default function ProfileScreen() {
   const profileMenu = [
     {
       id: 1,
-      name: "Inicio",
-      icon: "home",
+      name: "Buscar",
+      icon: "location",
       onPress: () => navigation.navigate("Home"),
     },
     {
       id: 2,
       name: "Mis Favoritos",
-      icon: "calendar",
+      icon: "heart",
       onPress: () => navigation.navigate("Favorites"),
     },
     {

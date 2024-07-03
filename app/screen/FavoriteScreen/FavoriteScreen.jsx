@@ -1,4 +1,4 @@
-import { View, Text, ActivityIndicator, FlatList } from 'react-native';
+import { View, Text, ActivityIndicator, FlatList, ScrollView } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import {
   getFirestore,
@@ -38,7 +38,7 @@ export default function FavoriteScreen() {
   }, [user]);
 
   return (
-    <View>
+    <View className='flex-1'>
       <Text className="font-outfitBold text-2xl text-center mt-5">
         Mis lugares {" "}
         <Text className="font-outfitBold text-2xl text-center mt-5 text-primary">

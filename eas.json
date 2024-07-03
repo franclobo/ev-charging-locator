@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 10.1.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_aGFuZHktZ3VsbC01NC5jbGVyay5hY2NvdW50cy5kZXYk",
+        "EXPO_PUBLIC_PLACES_API_KEY": "AIzaSyBbWtNuo87QWGWKzDV4O5b74n_5zqcWYu4",
+        "NEARBY_SEARCH": "https://places.googleapis.com/v1/places:searchNearby",
+        "API_KEY": "AIzaSyBbWtNuo87QWGWKzDV4O5b74n_5zqcWYu4"
+      }
+    },
+    "test": {
+      "env": {
+        "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_aGFuZHktZ3VsbC01NC5jbGVyay5hY2NvdW50cy5kZXYk",
+        "EXPO_PUBLIC_PLACES_API_KEY": "AIzaSyBbWtNuo87QWGWKzDV4O5b74n_5zqcWYu4",
+        "NEARBY_SEARCH": "https://places.googleapis.com/v1/places:searchNearby",
+        "API_KEY": "AIzaSyBbWtNuo87QWGWKzDV4O5b74n_5zqcWYu4"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
