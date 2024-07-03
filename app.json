@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,6 +22,36 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "Outfit-Black": ["./assets/fonts/Outfit/static/Outfit-Black.ttf"],
+          "Outfit-Bold": ["./assets/fonts/Outfit/static/Outfit-Bold.ttf"],
+          "Outfit-ExtraBold": [
+            "./assets/fonts/Outfit/static/Outfit-ExtraBold.ttf"
+          ],
+          "Outfit-ExtraLight": [
+            "./assets/fonts/Outfit/static/Outfit-ExtraLight.ttf"
+          ],
+          "Outfit-Light": ["./assets/fonts/Outfit/static/Outfit-Light.ttf"],
+          "Outfit-Medium": ["./assets/fonts/Outfit/static/Outfit-Medium.ttf"],
+          "Outfit-Regular": ["./assets/fonts/Outfit/static/Outfit-Regular.ttf"],
+          "Outfit-SemiBold": [
+            "./assets/fonts/Outfit/static/Outfit-SemiBold.ttf"
+          ],
+          "Outfit-Thin": ["./assets/fonts/Outfit/static/Outfit-Thin.ttf"]
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow EV Charging Station to use your location."
+        }
+      ]
+    ],
+    "scheme": "ev-charging-station-app"
   }
 }
